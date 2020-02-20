@@ -1,0 +1,63 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #ddd;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/back-ground.jpeg')
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+img{
+   width: 120px;
+   margin-bottom: 15px;
+   /*Your code here*/
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+div{
+   padding: 30px;
+   margin:5px;
+   /* YOUR CODE HERE */
+
+   text-align: center;
+   overflow: hidden;
+}
+
+
+#mystuff{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto
+}
+
+
+@media all and (min-width: 850px){
+
+  #mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  div{
+    margin: 25px;
+    padding: 60px;
+  }
+
+  div:nth-child(even){
+    border: 1px solid black;
+  }
+
+}
